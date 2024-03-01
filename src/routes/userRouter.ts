@@ -23,7 +23,7 @@ router.post('/signup', async (req, res) => {
       return res.status(500).json({ error: 'Internal Server Error' });
     }
   });
-  
+
   // User login
 router.post('/login', async (req, res) => {
   const { username, password } = req.body;
